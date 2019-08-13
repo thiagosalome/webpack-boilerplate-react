@@ -1,0 +1,54 @@
+{
+  "name": "Site",
+  "version": "1.0.0",
+  "tag-build": "1.0.0",
+  "tag-build-sprite": "1",
+  "tag-build-css": "1",
+  "tag-build-js": "1",
+  "description": "Site Title",
+  "author": "Thiago Salomé",
+  "license": "ISC",
+  "homepage": "",
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "sprite": "node utils/svg-sprite/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.9",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.14.1",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "replace": "^1.0.1",
+    "sass-loader": "^7.1.0",
+    "svg-sprite": "^1.5.0",
+    "svg2png": "^4.1.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "dependencies": {}
+}
