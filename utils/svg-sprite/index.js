@@ -4,7 +4,7 @@ const glob = require('glob')
 
 const fs = require('fs')
 const path = require('path')
-const cwd = path.resolve('./src/assets/images/svgs')
+const cwd = path.resolve('./src/images/svgs')
 const { exec } = require('child_process')
 
 const tagBuildSprite = require('./../../package.json')['tag-build-sprite']
@@ -14,11 +14,11 @@ const spriter = new SVGSpriter({
   mode: {
     css: {
       dest: '.',
-      sprite: `assets/images/sprite.${tagBuildSprite}.svg`,
+      sprite: `images/sprite.${tagBuildSprite}.svg`,
       bust: false,
       render: {
         scss: {
-          dest: 'css/abstracts/_sprite.scss',
+          dest: 'sass/abstracts/_sprite.scss',
           template: path.resolve('./utils/svg-sprite/tmpl/template.scss')
         }
       },
